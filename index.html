@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Grid</title>
+    <!-- ADDING THE CDN LINKS TO ACCESS GSAP LIBRARIES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Flip.min.js"></script>
+  </head>
+  <body>
+    <!-- THE IMAGES GALLERY -->
+    <div class="gallery">
+      <!-- EACH FIGURE REPRESENTS AN IMAGE IN THE GRID WITH A UNIQUE DATA-GRID ATTRIBUTE -->
+      <figure data-grid="img-1">
+        <img src="/images/Dog-1.jpg" alt="Dog 1" />
+      </figure>
+
+      <figure data-grid="img-2">
+        <img src="/images/Dog-2.jpg" alt="Dog 2" />
+      </figure>
+
+      <figure data-grid="img-3">
+        <img src="/images/Dog-3.jpg" alt="Dog 3" />
+      </figure>
+
+      <figure data-grid="img-4">
+        <img src="/images/Dog-4.jpg" alt="Dog 4" />
+      </figure>
+
+      <figure data-grid="img-5">
+        <img src="/images/Dog-5.jpg" alt="Dog 5" />
+      </figure>
+
+      <figure data-grid="img-6">
+        <img src="/images/Dog-6.jpg" alt="Dog 6" />
+      </figure>
+
+      <figure data-grid="img-7">
+        <img src="/images/Dog-7.jpg" alt="Dog 7" />
+      </figure>
+
+      <figure data-grid="img-8">
+        <img src="images/Dog-8.jpg" alt="Dog 8" />
+      </figure>
+
+      <figure data-grid="img-9">
+        <img src="images/Dog-9.jpg" alt="Dog 9" />
+      </figure>
+
+      <figure data-grid="img-10">
+        <img src="images/Dog-10.jpg" alt="Dog 10" />
+      </figure>
+    </div>
+
+    <!-- JAVASCRIPT FILE THAT CONTAINS THE CODE FOR HANDLING THE GSAP ANIMATIONS -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

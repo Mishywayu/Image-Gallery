@@ -1,0 +1,48 @@
+/* STYLES FOR THE BODY, SETTING UP A FLEX CONTAINER
+(THIS BASICALLY MAKES THE CONTENT IN THE BODY - THE GALLERY, TO BE AT THE CENTER) */
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* STYLES FOR THE GALLERY CONTAINER USING GRID LAYOUT */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 70vw;
+    max-height: 80vh;
+    aspect-ratio: 1/1;
+}
+
+/* STYLES FOR EACH FIGURE BASED ON ITS DATA-GRID ATTRIBUTE */
+figure[data-grid="img-1"] { grid-area: 1 / 1 / 5 / 7; }
+figure[data-grid="img-2"] { grid-area: 5 / 1 / 7 / 3; }
+figure[data-grid="img-3"] { grid-area: 1 / 7 / 3 / 9; }
+figure[data-grid="img-4"] { grid-area: 3 / 7 / 5 / 9; }
+figure[data-grid="img-5"] { grid-area: 5 / 7 / 7 / 9; }
+figure[data-grid="img-6"] { grid-area: 5 / 3 / 7 / 5; }
+figure[data-grid="img-7"] { grid-area: 5 / 5 / 7 / 7; }
+figure[data-grid="img-8"] { grid-area: 1 / 9 / 3 / 11; }
+figure[data-grid="img-9"] { grid-area: 3 / 9 / 5 / 11; }
+figure[data-grid="img-10"] { grid-area: 5 / 9 / 7 / 11; }
+
+/* STYLES FOR FIGURES AND THEIR CHILD IMAGES */
+figure {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
